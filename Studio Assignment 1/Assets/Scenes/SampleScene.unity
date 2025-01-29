@@ -772,7 +772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphereBody: {fileID: 584003381}
   ballSpeed: 2
-  jumpHeight: 10
+  jumpHeight: 4
   onGround: 1
 --- !u!1 &715417703
 GameObject:
