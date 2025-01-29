@@ -3,4 +3,3 @@
 All assignment requirements completed; Followed tutorial, implementing the input manager, ball controller, added walls, ground, and the ball, as well as handling jumping by using collision events with the ground to detect when the ball is touching the ground.
 
 Youtube link to demo: https://youtu.be/JHZNljSZ1Rg
-Original video is also in the repo as a .mp4 inside Studio Assignment 1
