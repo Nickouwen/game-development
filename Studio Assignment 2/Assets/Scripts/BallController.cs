@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Rigidbody))]
 public class BallController : MonoBehaviour
 {
     [SerializeField] private float force = 1f;
@@ -16,10 +17,19 @@ public class BallController : MonoBehaviour
     {
         ballRB = GetComponent<Rigidbody>();
 
+        Cursor.lockState = CursorLockMode.Locked;
+
         inputManager.OnSpacePressed.AddListener(LaunchBall);
 
+        ResetBall();
+    }
+
+    public void ResetBall()
+    {
         transform.parent = ballAnchor;
         transform.localPosition = Vector3.zero;
+        launchIndicator.gameObject.SetActive(true);
+        isLaunched = false;
         ballRB.isKinematic = true;
     }
 
